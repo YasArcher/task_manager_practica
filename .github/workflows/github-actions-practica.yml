@@ -1,0 +1,17 @@
+name: Deploy Angular to Vercel
+on:
+  push:
+    branches:
+      - main # Cambia 'main' si tu rama principal tiene otro nombre
+
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+      - name: Install packages
+        run: npm ci
+      - name: Bundle
+        run: npm run build
