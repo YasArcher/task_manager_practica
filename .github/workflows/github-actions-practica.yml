@@ -2,7 +2,7 @@ name: Deploy Angular to Vercel
 on:
   push:
     branches:
-      - main # Cambia 'main' si tu rama principal tiene otro nombre
+      - main
 
 jobs:
   Explore-GitHub-Actions:
